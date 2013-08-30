@@ -4,7 +4,7 @@ RTL
 operations, register communication and timing of processes
 
 One line comments start with // and end at the end of the line
-Multi-line comments start with /* and end with */
+Multi-line comments start with /* and end with */  -- C-style
 
 Variable names have to start with an alphabetic character or underscore followed by 
 alphanumeric or underscore characters. System tasks and functions start with a $ sign. 
@@ -17,3 +17,8 @@ underscores embedded in them for improved readability. For example
 'X or `x : Set all bits to x
 2'b1Z //binary literal
 24_000  //decimal literal
+
+
+‘~’ operator negates the input . 
+‘&’ operator ANDs two inputs , 
+‘|’ operator ORs two inputs, while ‘^’ operator performs a logical XOR on two inputs. 
