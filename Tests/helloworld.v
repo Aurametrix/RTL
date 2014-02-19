@@ -1,8 +1,9 @@
 //-----------------------------------------------------
 // test with online simulator at http://iverilog.com/
 // Design Name : hello_world
-// File Name : hello_world.v
+// File Name : helloworld.v
 // Function : This program will print 'hello world'
+// module can be named hello ( ) 
 //-----------------------------------------------------
 module main ;
 
