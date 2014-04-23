@@ -15,20 +15,28 @@ Integer Literals and logic values can be sized and unsized, be single literals o
 underscores embedded in them for improved readability. For example
 
 '0 : Set all bits to 0
+
 '1: Set all bits to 1
+
 'X or `x : Set all bits to x
+
 2'b1Z //binary literal
+
 24_000  //decimal literal
 
+
 Two types of signal:
+
 – “Wire” is a simple connection between two components
 • Should have just one driver
 • no persistence
 – “Reg” stores its value until updated again
 
+
 Data Types:
+
 wire and_gate_output; // "and_gate_output" is a wire that only outputs
-reg d_flip_flop_output; // "d_flip_flop_output" is a register; it stores and outputs a value
+reg d_flip_flop_output; // "d_flip_flop_output" is a register, stores and outputs a value
 reg [7:0] address_bus; // "address_bus" is a little-endian 8-bit register
 
 ‘~’ operator negates the input . 
@@ -41,8 +49,32 @@ It is contained within modules.
 External interface: declared set of inputs, outputs, and “inout”s
 Internal contents: wires, registers, logic, and/or submodules
 
+To keep the hierarchy clean, put logic, registers, etc in " leaf" modules, put connecting 
+wires and submodules in non-leaf modules, don't mix structural and behavioral code
+
+A gate is a module used to construct circuits. It has a few transistors connected 
+to perform some logic function.
+A transistor is a 3-terminal device. It has a source (power), drain (output) and 
+gate (input).
+
+
+Six different types of gates:
+
+7400 - NAND (four gates per chip)
+
+7402 - NOR (four gates per chip)
+
+7404 - NOT (six gates per chip)
+
+7408 - AND (four gates per chip)
+
+7432 - OR (four gates per chip)
+
+7486 - XOR (four gates per chip)
+
 
 Verilog Debugging
+
 $display – like printf in C
 – $display($time, " Count changed to %d", count);
 • $monitor – watch for any changes to the value of a net
