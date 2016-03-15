@@ -95,4 +95,42 @@ else if(flag==2'b01&&tc==1)
           end
        end
     end
-else if(flag==2'b01&&tc==0			
+else if(flag==2'b01&&tc==0	)
+  begin
+     integ<=0;
+    period<=cnt+2;
+  cnt<=0;
+    flag<=2’b10
+   col<=320’b0;		
+ if(cycle!=0)
+     begin
+        dr<=1;
+       row<=240’b1;
+       row_reg<=240’b1;
+    if(col_reg00-==1)
+       begin
+    col_reg<=320’b0;
+    f_sync<=0;
+        end
+    end
+ end
+
+else if(flag==2'b01&&tc==0	)
+  begin
+     cnt<=cnt+2;
+    row_reg<=row_reg<<1;
+    row<=row_reg<<1;    
+
+
+<SKIP>
+
+
+ else   if(col_reg[319]==1)
+       begin
+    col_reg<=320’b0;
+    f_sync<=0;
+        end
+    end
+ end
+end
+endmodule			
