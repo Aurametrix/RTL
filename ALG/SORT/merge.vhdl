@@ -57,8 +57,7 @@ END IF;
 END PROCESS;
 END level1;
 ----------------------------------END------------------------------------
---------------------------VHDL Code for LEVEL- 2------------------------
---
+--------------------------VHDL Code for LEVEL- 2-------------------------
 ENTITY merge2 IS
 PORT (in2_1,in2_2,in2_3,in2_4: IN STD_LOGIC_VECTOR (7
 DOWNTO 0);
@@ -90,3 +89,19 @@ ELSIF (flag<='0') THEN
  out2_4<= in2_2;
 END IF;
 
+IF (in2_4<=in2_1 and flag<='1') THEN
+ out2_2<= in2_4;
+ out2_3<= in2_1;
+ out2_4<= in2_2;
+ELSIF (in2_4>=in2_2 and flag<='1') THEN
+ out2_2<= in2_1;
+ out2_3<= in2_2;
+ out2_4<= in2_4;
+ELSIF (flag<='1') THEN
+ out2_2<= in2_1;
+ out2_3<= in2_4;
+ out2_4<= in2_2;
+END IF;
+END PROCESS;
+END level2;
+---------------------------------END---------------
