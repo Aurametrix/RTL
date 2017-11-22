@@ -1,31 +1,31 @@
 RTL
 ===
 
-operations, register communication and timing of processes
+### operations, register communication and timing of processes
 
-One line comments start with // and end at the end of the line
-Multi-line comments start with /* and end with */  -- C-style
+* One line comments start with // and end at the end of the line
+* Multi-line comments start with /* and end with */  -- C-style
 
-Systems are described as a set of modules
+* Systems are described as a set of modules
 
-Variable names have to start with an alphabetic character or underscore followed by 
+* Variable names have to start with an alphabetic character or underscore followed by 
 alphanumeric or underscore characters. System tasks and functions start with a $ sign. 
 
-Integer Literals and logic values can be sized and unsized, be single literals or have
+* Integer Literals and logic values can be sized and unsized, be single literals or have
 underscores embedded in them for improved readability. For example
 
-'0 : Set all bits to 0
+..* '0 : Set all bits to 0
 
-'1: Set all bits to 1
+..* '1: Set all bits to 1
 
-'X or `x : Set all bits to x
+..* 'X or `x : Set all bits to x
 
-2'b1Z //binary literal
+..* 2'b1Z //binary literal
 
-24_000  //decimal literal
+..* 24_000  //decimal literal
 
 
-Two types of signal:
+* Two types of signal:
 
 – “Wire” is a simple connection between two components
 • Should have just one driver
@@ -33,15 +33,15 @@ Two types of signal:
 – “Reg” stores its value until updated again
 
 
-Data Types:
+### Data Types:
 
-wire and_gate_output; // "and_gate_output" is a wire that only outputs
-reg d_flip_flop_output; // "d_flip_flop_output" is a register, stores and outputs a value
-reg [7:0] address_bus; // "address_bus" is a little-endian 8-bit register
+* wire and_gate_output; // "and_gate_output" is a wire that only outputs
+..* reg d_flip_flop_output; // "d_flip_flop_output" is a register, stores and outputs a value
+..* reg [7:0] address_bus; // "address_bus" is a little-endian 8-bit register
 
-‘~’ operator negates the input . 
-‘&’ operator ANDs two inputs , 
-‘|’ operator ORs two inputs, while ‘^’ operator performs a logical XOR on two inputs. 
+..* ‘~’ operator negates the input . 
+..* ‘&’ operator ANDs two inputs , 
+..* ‘|’ operator ORs two inputs, while ‘^’ operator performs a logical XOR on two inputs. 
 
 
 Logic is specified either as structural (combinational) or behavioral (sequential).
@@ -83,3 +83,7 @@ $display – like printf in C
 values to a file for later viewing
 – $dumpfile(“output.log”)
 – $dumpvars(0, top_level_module)
+
+### AI
+
+* [Neural Network on FPGA](https://arxiv.org/ftp/arxiv/papers/1711/1711.05860.pdf)
