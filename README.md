@@ -84,6 +84,10 @@ values to a file for later viewing
 – $dumpfile(“output.log”)
 – $dumpvars(0, top_level_module)
 
+### Misc
+
+* [Game of Life](https://k155la3.blog/2020/10/09/conways-game-of-life-on-fpga/) on FPGA
+
 ### AI
 
 * [Neural Network on FPGA](https://arxiv.org/ftp/arxiv/papers/1711/1711.05860.pdf)
