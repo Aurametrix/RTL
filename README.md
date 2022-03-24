@@ -73,6 +73,11 @@ Six different types of gates:
 7486 - XOR (four gates per chip)
 
 
+[Verilog is weird](https://danluu.com/why-hardware-development-is-hard/)
+
+
+
+
 Verilog Debugging
 
 $display – like printf in C
