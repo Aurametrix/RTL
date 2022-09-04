@@ -92,6 +92,7 @@ values to a file for later viewing
 ### Misc
 
 * [Game of Life](https://k155la3.blog/2020/10/09/conways-game-of-life-on-fpga/) on FPGA
+* [Online circuit simulator](https://dcaclab.com/)
 
 ### AI
 
