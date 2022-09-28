@@ -100,3 +100,7 @@ values to a file for later viewing
 * [Raspberry Pi atomic clock](https://github.com/will127534/RaspberryPiAtomicNixieClock/wiki)
 * [Hardware for Deep Learning. Part 1: INTRO](https://blog.inten.to/hardware-for-deep-learning-current-state-and-trends-51c01ebbb6dc)
 * [Hardware for Deep Learning. Part 4: ASIC](https://blog.inten.to/hardware-for-deep-learning-part-4-asic-96a542fe6a81)
+
+### Other languages
+
+* [MockMechanics](https://github.com/felipereigosa/mock-mechanics)
